@@ -46,12 +46,48 @@ let externalMessage = () => {
     printMessage(number);
 }
 
-console.log(num); //global or outer scope
+// console.log(num); //global or outer scope
 
 // console.log(num1);
 // const.log(num2);
 // const.log(num3);
 
+
+function changeCompany(){
+
+    let element = document.getElementById('company');
+
+    element.innerHTML = 'Welcome to Facebook';
+
+    console.log('welcome to the new company');
+
+    alert('Congratulations');
+
+    // document.write('Congratulations on Joining Facebook');
+}
+
+
+function enterUsername(){
+
+    let element = document.getElementById('username');
+
+    let username = window.prompt('Enter USERNAME');
+
+    element.innerHTML = username;
+}
+
+function deleteUser(){
+
+    let element = document.getElementById('username');
+
+    const confirm = window.confirm('Are you sure you want to delete the user ?');
+
+    if(confirm){
+        element.innerHTML = 'User deleted'
+    }else{
+        element.innerHTML = 'User not deleted'
+    }
+}
 
 /***************** var **********************/
 

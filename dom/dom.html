@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 
+
+    <!-- Internal CSS -->
+
+    <style>
+        .bg-company{
+            color: brown;
+        }
+
+        .bg-user{
+            color: wheat;
+        }
+    </style>
+
     <!-- Internal JS -->
     <script>
         function displayMessage(){
@@ -19,6 +32,15 @@
     <div>
         <button onclick="displayMessage()" >Click me</button> <!-- Inline JS -->
         <button onclick="externalMessage()">External Message</button>
+
+        <h1 id="company" class="bg-company">Welcome to google</h1>
+        <button onclick="changeCompany()">Change-company</button>
+
+        <h2 id="username" class="bg-user">
+
+        </h2>
+        <button onclick="enterUsername()">Enter-User</button>
+        <button onclick="deleteUser()">Delete-user</button>
     </div>
 </body>
 </html>
